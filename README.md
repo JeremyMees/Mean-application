@@ -1,27 +1,49 @@
-# MeanApp
+# Mean application
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.4.
+this is just a small crud application I made where I for the first time made my own backend.
+The application is made with :
+- MongoDB
+- Express
+- angular
+- node.js
 
-## Development server
+#### The application contains
+- server side pagination
+- authentication with JWT
+- autherization
+- Mime-type validator for images
+- Error handeling front & back-end 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Requirements
 
-## Code scaffolding
+- node v14.16.0
+- npm v7.15.0
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Usage
 
-## Build
+- Download master branch from repository
+- Open the map in your IDE or terminal
+- Run `npm install` in the terminal to install all the required packages
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+#### Run backend server
+- Run `npm run server` in the terminal to run the backend server
 
-## Running unit tests
+#### Run angular project
+- Run `ng serve -o` in the terminal to open a dev server with the project
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+---
 
-## Running end-to-end tests
+## Developers
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Install dependencies
 
-## Further help
+`npm install`
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Build project
+
+`ng build`
+
+### Run project
+
+`ng serve -o`
+`npm run server`
