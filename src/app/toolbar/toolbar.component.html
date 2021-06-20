@@ -1,0 +1,22 @@
+<mat-toolbar color="primary"
+  ><span> <a routerLink="/">Random website</a> </span>
+  <span class="spacer"></span>
+  <ul>
+    <li *ngIf="authenticated">
+      <a mat-button routerLinkActive="mat-accent" routerLink="/create"
+        >New post</a
+      >
+    </li>
+    <li *ngIf="!authenticated">
+      <a mat-button routerLinkActive="mat-accent" routerLink="/login">Login</a>
+    </li>
+    <li *ngIf="!authenticated">
+      <a mat-button routerLinkActive="mat-accent" routerLink="/signup"
+        >Sign up</a
+      >
+    </li>
+    <li *ngIf="authenticated">
+      <button mat-button (click)="onLogOut()">Log out</button>
+    </li>
+  </ul>
+</mat-toolbar>
